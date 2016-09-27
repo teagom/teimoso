@@ -15,6 +15,7 @@ password = "0123456789" # password
 # email settings
 company = "Company X" # company / network
 subject = "%s internet IP" % company
+again = 300 # try sendmail again in 5 minutes.
 
 # notify admins
-to = ['admin@email.com'] # array of email address
+to = ['admin@email.com','admin1@email.com','admin2@email.com'] # array of admins email address

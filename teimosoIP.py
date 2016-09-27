@@ -17,6 +17,7 @@ from settings import sender, to, subject, smtpserver, username, password, log, a
 from smtplib import SMTP_SSL as SMTP
 from email.MIMEText import MIMEText
 
+
 def sendmail(ipc):
     print "--- Sendmail" 
 
@@ -65,8 +66,8 @@ def read_log(fl):
     return content
 
 
-# get current ip
 def get_current_ip():
+    print "- Get current Internet IP"
     url = urllib2.urlopen("http://api.ipify.org") # return internet IP plain text
     r = url.read()
     url.close()
