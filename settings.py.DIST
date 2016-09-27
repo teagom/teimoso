@@ -1,5 +1,14 @@
-#!/usr/bin/python
 # -*- coding: utf-8 -*-
+
+# # # # # # # # # # # # # # # # # # # # # 
+# auto: Tiago de Souza Moraes
+# http://teago.futuria.com.br
+#
+# Teimoso IP - Sendmail to admin when Internet IP change
+# https://github.com/teagom/teimoso
+# 
+# Python 2.7 and urlllib2
+# # # # # # # # # # # # # # # # # # # # #
 
 '''
     settings
@@ -15,7 +24,7 @@ password = "0123456789" # password
 # email settings
 company = "Company X" # company / network
 subject = "%s internet IP" % company
-again = 300 # try sendmail again in 5 minutes.
+again = 300 # Seconds, try sendmail again in 5 minutes, 5Minutes X 60Seconds
 
 # notify admins
 to = ['admin@email.com','admin1@email.com','admin2@email.com'] # array of admins email address

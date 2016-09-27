@@ -1,10 +1,12 @@
 #!/usr/bin/python
+# -*- coding: utf-8 -*-
 
 # # # # # # # # # # # # # # # # # # # # # 
-# Nofity admins when Internet IP change
-#
 # auto: Tiago de Souza Moraes
 # http://teago.futuria.com.br
+#
+# Teimoso IP - Sendmail to admin when Internet IP change
+# https://github.com/teagom/teimoso
 # 
 # Python 2.7 and urlllib2
 # # # # # # # # # # # # # # # # # # # # #
@@ -88,8 +90,9 @@ if path.isfile(log): # file log exit? first time no exist.
     if not ipl == ipc :
         sendmail(ipc)
         write_log(log,ipc) # store new IP in log tile.
+        print '- Internet IP change'
     else:
-        print '- Not change'
+        print '- Internet IP not change'
 
 else: # not last log, sendmail and store ip.
     print "- Non exist last IP"
