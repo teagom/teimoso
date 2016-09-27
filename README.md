@@ -12,7 +12,7 @@ $ cp settings.py.DIST settings.py
 
 $ chmod 700 teimosoIP.py settings.py
 
-# change settings, smtp and others
+# change settings, smtp,user,subject and others.
 $ vim settings.py
 
 # crontab / Check for each 00 minutes
@@ -21,7 +21,7 @@ $ vim /etc/crontab
 00 *    * * *   root     /usr/local/teimoso/teimosoIP.py
 
 # Test first time
-$ cd /usr/loca/teimoso
+$ cd /usr/local/teimoso
 
 $ ./teimosoIP.py
 
