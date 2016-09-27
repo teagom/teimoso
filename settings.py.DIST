@@ -1,0 +1,20 @@
+#!/usr/bin/python
+# -*- coding: utf-8 -*-
+
+'''
+    settings
+'''
+log = "/tmp/out.log" # store current internet ip
+
+# smtp
+sender = 'report@email.com' # from 
+smtpserver = 'smtp.email.com' # smtp server address
+username = "report@email.com" # username 
+password = "0123456789" # password
+
+# email settings
+company = "Company X" # company / network
+subject = "%s internet IP" % company
+
+# notify admins
+to = ['admin@email.com'] # array of email address
