@@ -1,5 +1,5 @@
 # Teimoso
-python script - sendmail when internet ip change adsl
+python script - sendmail when your ADSL internet modem ip change.
 
 # Install
 $ cd /usr/local
